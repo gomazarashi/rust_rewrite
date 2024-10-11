@@ -7,5 +7,7 @@ fn main() {
     io::stdin()
         .read_line(&mut input_str)
         .expect("行の読み込みに失敗しました");
-    println!("{}が入力されました",input_str);
+
+    let trimed_str = input_str.trim_end();
+    println!("{}が入力されました", trimed_str);
 }
